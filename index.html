@@ -16,6 +16,23 @@
       padding: 20px;
       border-radius: 8px;
     }
+
+	  .bg{
+		  border-radius:20px; 
+		  display:block; 
+		  margin: 0 auto; 
+		  position: absolute; 
+		  top:440px; 
+		  left:15px;
+
+	  }
+
+  @media screen and (min-width: 701px) {
+    .bg{
+      display: none;
+    }
+  }
+
     .popup {
       position: fixed;
       top: 20px;
@@ -87,7 +104,7 @@
     }
   </script>
    <img style ="border-radius:20px; display:block; margin: 0 auto;" src = "bg.jpg" width="100px">
-      <img style ="border-radius:20px; display:block; margin: 0 auto; position: absolute; top:440px; left:15px;" src = "bg3.jpg" width="330px">
+      <img class ="bg" src = "bg3.jpg" width="330px">
 </head>
 <body>
 
@@ -109,5 +126,6 @@
   </div>
 </body>
 </html>
+
 
 
